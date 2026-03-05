@@ -8,3 +8,13 @@ foreach(var item in estudiantes)
 {
     Console.WriteLine($"Nombre: {item.Key}, Nota: {item.Value}. ");
 }
+
+estudiantes.Remove("Carlos");
+
+Console.WriteLine("Presione cualquer tecla. ");
+Console.ReadKey();
+
+foreach(var item in estudiantes)
+{
+    Console.WriteLine($"Nombre: {item.Key}, Nota: {item.Value}. ");
+}
